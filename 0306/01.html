@@ -6,6 +6,19 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Welcome HTML5, CSS3, Javascript</h1>
+    <h1 id="dynamic-content">Welcome HTML5, CSS3, Javascript</h1>
+    <script>
+        const messages = [
+            "Welcome HTML5, CSS3, Javascript",
+            "Learn to code with HTML5",
+            "Style your pages with CSS3",
+            "Enhance functionality with JavaScript"
+        ];
+        let index = 0;
+        setInterval(() => {
+            index = (index + 1) % messages.length;
+            document.getElementById("dynamic-content").innerText = messages[index];
+        }, 3000);
+    </script>
 </body>
 </html>
