@@ -14,10 +14,17 @@
             "Style your pages with CSS3",
             "Enhance functionality with JavaScript"
         ];
+        const colors = [
+            "#FF5733", // Red
+            "#33FF57", // Green
+            "#3357FF", // Blue
+            "#FF33A1"  // Pink
+        ];
         let index = 0;
         setInterval(() => {
             index = (index + 1) % messages.length;
             document.getElementById("dynamic-content").innerText = messages[index];
+            document.body.style.backgroundColor = colors[index];
         }, 3000);
     </script>
 </body>
