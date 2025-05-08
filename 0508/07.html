@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글자생략</title>
+    <style>
+        #ellipsis {
+            width: 400px;
+            white-space: nowrap; /* 줄바꿈 방지 */
+            overflow: hidden; /* 넘치는 부분 숨김 */
+            text-overflow: ellipsis; /* 생략부호(...) 표시 */
+        }
+    </style>
+</head>
+<body>
+    <h1 id="ellipsis">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et quos nihil explicabo amet error accusantium quidem, eveniet officia, minus sit quisquam quod quasi, nobis laudantium dolorem fugit itaque culpa veniam?</h1>
+    <p id="ellipsis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum consectetur mollitia quaerat cum laborum sunt veritatis ducimus aspernatur qui, quam animi. A molestiae, laborum enim sequi voluptates fugit obcaecati nam?</p>
+</body>
+</html>
