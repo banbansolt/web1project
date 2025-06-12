@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(
+            function(){
+                $("#btn1").click(
+                    function(){
+                        $("#content1").fadeToggle('slow');
+                    }
+                );
+                    
+                   
+            }
+        );
+    </script>
+</head>
+<body>
+    <button id = btn1>Visual Effect</button>
+    <br>
+    <!-- fadein(를 사용하려면 div요소에 display:none으로 css를 적용해야 효과를 확인할 수 있다)-->
+    <div id ="content1">
+        <h1>Lorem ipsum dolor</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae quisquam nesciunt id eaque sapiente enim. Eos et incidunt nostrum molestiae consectetur, quo dicta adipisci laboriosam suscipit nam magni sit consequatur?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis deserunt ut eligendi laudantium blanditiis debitis vitae ex quisquam possimus quo, perspiciatis, ad in molestiae consectetur ullam praesentium quod veniam aperiam?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, cum iure qui, atque quas quos quasi odit corrupti culpa illo aliquam dignissimos impedit provident vel. Harum impedit minima necessitatibus distinctio.
+
+        </p>
+    </div>
+</body>
+</html>
